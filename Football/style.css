@@ -120,8 +120,7 @@ button:active{
  .ball{
    position: absolute;
    bottom:10px;
-   left: 50%;
-   transform: translateX(-50%);
+   left: 47%;
  }
 
  .goal{
@@ -140,10 +139,39 @@ button:active{
  }
 
  .ball img{
-   width:90px;
-   height: 80px;
+   width:70px;
+   height: 60px;
  }
 
 .goal img{
    width: 150px;
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background:rgba(0, 0, 0, 0.485);
+  z-index: 99;
+}
+
+
+.title{
+  color:#fff;
+  margin: 20px 0;
+}
+
+.div{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div button{
+  margin: 0;
 }
