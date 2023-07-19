@@ -91,6 +91,33 @@ const getCached = (func) => {
   };
 };
 
-getCached = getCached(getData);
+// getCached = getCached(getData);
 
-getCached();
+// getCached();
+
+//!prime number
+
+const primeNumber = (a) => {
+  for (let i = 1; i <= a; i++) {
+    let a = 0;
+    for (let j = 1; j <= i; j++) {
+      if (!(i % j)) a++;
+    }
+    if (a === 2) {
+      console.log(i);
+    }
+  }
+};
+
+// primeNumber(15);
+
+const isPrime = (num) => {
+  if (num <= 1) return false;
+  for (let i = 2; i < Math.sqrt(num); i++) {
+    if (!(num % i)) return false;
+  }
+  return true;
+};
+
+console.log(isPrime(2));
+console.log(isPrime(3));
