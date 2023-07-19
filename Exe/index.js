@@ -142,3 +142,10 @@ const binary = (n) => {
 // console.log(binary(15000));
 
 //!facrorial
+
+const facrorial = (a) => {
+  if (!a) return 1;
+  return a * facrorial(a - 1);
+};
+
+// console.log(facrorial(5));
