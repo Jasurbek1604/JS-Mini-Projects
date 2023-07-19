@@ -119,5 +119,26 @@ const isPrime = (num) => {
   return true;
 };
 
-console.log(isPrime(2));
-console.log(isPrime(3));
+// console.log(isPrime(2));
+// console.log(isPrime(3));
+
+//!eng kattasidan bitta oldingi kattasing ayirip arirmani arrayga set qiling
+// [1,2,3,4,5,6]
+// [1,2,3,4,1]
+// [1,2,1,1]
+// [1,1,1]
+// [1]
+
+//!Berilgan N integierning, binary korinishidagi, 1lar oralig'idagi 0 larning eng uzun ketma ketligini toping.
+const binary = (n) => {
+  n = n.toString(2).split("1");
+  let max = n[0].length;
+  n.forEach((e) => {
+    if (e.length > max) max = e.length;
+  });
+  return max;
+};
+
+// console.log(binary(15000));
+
+//!facrorial
