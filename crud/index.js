@@ -175,6 +175,6 @@ function save(id) {
       return item;
     }
   });
-  tbody.innerHTML = null;
+  tbody.innerHTML = "";
   getData(res);
 }
